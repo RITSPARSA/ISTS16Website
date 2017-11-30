@@ -74,18 +74,21 @@ nav.nav-center ul li a {
 
 #navbar {
     position: absolute;
+    background-color: #1d2430
 }
 
 #Transition{
-    height: 15%;
+    height: 10%;
     width: 100%;
-    background-image: url('../img/floor.jpg');
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
     background-repeat: repeat-x;
-    background-size: 15%;
+    background-color: transparent;
+    background-size: 9%;
     
 }
 
 #About{
+    background-color: white;
     height: 75%;
     display: flex;
     justify-content: flex-start;
