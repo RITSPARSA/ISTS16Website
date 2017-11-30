@@ -1,0 +1,50 @@
+
+  
+  #logo-container {
+    position: fixed;
+    left: 45%;
+    margin: auto;
+  }
+  
+  /*Neon*/
+  #logo1 {
+    font-size: 6em;
+    color: #FFFFFF;
+    float: left;
+    font-family: Iceland;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    
+  }
+
+  #logo2 {
+    font-size: 6em;
+    color: #fff;
+    float: left;
+    font-family: Monoton;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #D32F2F, 0 0 35px #D32F2F, 0 0 40px #D32F2F, 0 0 50px #D32F2F, 0 0 65px #D32F2F;
+  }
+
+  #date {
+    position: fixed;
+    align-content: center;
+    left: 35%;
+    margin-top: 7%;
+    font-size: 3em;
+    font-family: Stratum;
+    color: #FFFFFF;
+  }
+
+  #roboarm {
+    float: left;
+    max-width: 15%;
+    max-height: 15%;
+    margin-top: 5%;
+    margin-left: -5px;
+  }
+  
+
+  @font-face {
+    font-family: "Stratum";
+    src: local(Stratum Bold), url("../fonts/stratum/Stratum-Bold.ttf") format("ttf"), url("../fonts/stratum/Stratum-Bold.ttf") format("ttf");
+    font-weight: 100;
+  }

@@ -7,14 +7,16 @@
     
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/style.css">
+      <link type="text/css" rel="stylesheet" href="css/logo.css">
       <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     </head>
 
     <body>
-
+      <div>
         <nav class="blue-grey darken-4 nav-center" role="navigation">
             <div class="nav-wrapper container">
-              <a href="#!" class="brand-logo left">ISTS 16</a>
+              <a href="#!" class="brand-logo left">
+              </a>
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
               <ul class="center hide-on-med-and-down">
                 <li><a href="sass.html">TOP</a></li>
@@ -30,20 +32,23 @@
               </ul>
             </div>
         </nav>
-   
+
 
         <div id='stars'></div>
         <div id='stars2'></div>
         <div id='stars3'></div>
         <div id='title'>
-            <span>
-                SPARSA Presents
-            </span>
-            <br>
-            <span>
-                ISTS 16
-            </span>
+            <div id="logo-container">
+                <div>
+                  <div id="logo1">ISTS</div>
+                  <div id="logo2">16</div>
+                  <img id="roboarm" src="img/roboarm.png">
+                </div>
+                <div id="date">FEBRUARY 2ND - 4TH 2018</div>
+            </div>
         </div>
+        
+
       <!-- jQuery is required by Materialize to function -->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -51,7 +56,7 @@
       <script type="text/javascript">
         //custom JS
       </script>
-    
+    </div>
     </body>
 
 </html>
