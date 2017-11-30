@@ -1,7 +1,7 @@
 
   
   #logo-container {
-    position: fixed;
+    position: relative;
     width: 600px;
     height: 300px;
     top: 50%;

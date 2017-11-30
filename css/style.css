@@ -73,7 +73,16 @@ nav.nav-center ul li a {
 }
 
 #navbar {
-    position: fixed;
+    position: absolute;
+}
+
+#Transition{
+    height: 15%;
+    width: 100%;
+    background-image: url('../img/floor.jpg');
+    background-repeat: repeat-x;
+    background-size: 15%;
+    
 }
 
 #About{
