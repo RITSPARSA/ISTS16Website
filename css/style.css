@@ -1,5 +1,5 @@
 html {
-    background-color: #1b2735
+    background-color: black;
 }
 
 #star-box {
@@ -75,10 +75,14 @@ nav.nav-center ul li a {
 }
 
 #About{
-    height: 150%;
+    height: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
 }
 
 #About-Inner{
+    padding: 10%;
     color: white;
 }
 @keyframes animStar {
