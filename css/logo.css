@@ -2,36 +2,45 @@
   
   #logo-container {
     position: fixed;
-    left: 45%;
-    margin: auto;
+    width: 600px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px; /* Negative half of height. */
+    margin-left: -300px; /* Negative half of width. */
+  }
+
+  #logo-text {
+    margin: 0 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
   }
   
-  /*Neon*/
   #logo1 {
-    font-size: 6em;
+    display: inline;
+    margin: auto auto;
+    font-size: 650%;
     color: #FFFFFF;
-    float: left;
     font-family: Iceland;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
     
   }
-
+  
   #logo2 {
-    font-size: 6em;
+    display: inline-block;
+    margin: auto auto;
+    font-size: 700%;
     color: #fff;
-    float: left;
     font-family: Monoton;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #D32F2F, 0 0 35px #D32F2F, 0 0 40px #D32F2F, 0 0 50px #D32F2F, 0 0 65px #D32F2F;
   }
 
   #date {
-    position: fixed;
-    align-content: center;
-    left: 35%;
-    margin-top: 7%;
-    font-size: 3em;
-    font-family: Stratum;
+    margin: auto auto;
     color: #FFFFFF;
+    font-size: 250%;
+    font-family: Stratum;
   }
 
   #roboarm {
