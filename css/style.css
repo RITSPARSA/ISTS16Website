@@ -1,5 +1,6 @@
 html {
     background-color: black;
+    font-family: Roboto
 }
 
 #star-box {
@@ -13,7 +14,7 @@ html {
   @media(min-width:60em){html{font-size: 110%}}
 
   #star-box-about {
-    top: 30%;
+    top: 25%;
     left: 0%;
     height: auto;
     position: relative;
@@ -23,9 +24,9 @@ html {
 
   #star-about-background{
     z-index: 0;
-    height: 35%;
+    height: 47%;
     width: 50%;
-    background: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+    background: linear-gradient(90deg, #0277bd 0%, #d50000 100%);
     border-radius: 6px;
     position: relative;
     top: 35%;
@@ -34,12 +35,76 @@ html {
   #star-about-background > div{
     z-index: 1;
     background:#1b2735;  
-    height: 95%;
-    width: 95%;
+    height: 96%;
+    width: 98%;
     position: absolute;
-    padding: 45px 25px;
+    top: 8px;
+    left: 10px;
+    padding: 5px 25px;
     color: white;
     margin: 0 auto;
+    font-size: 200%;
+    overflow: auto;
+  }
+
+  #star-register-row{
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 40%;
+  }
+  #star-register-background1{
+    z-index: 0;
+    height: 40%;
+    width: 30%;
+    background: linear-gradient(90deg, #d50000 0%, #0277bd 100%);
+    border-radius: 6px;
+    position: relative;
+    left: 10%;
+
+  }
+  #star-register-background1 > div{
+    z-index: 1;
+    background:#1b2735;  
+    height: 96%;
+    width: 97%;
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    padding: 5px 25px;
+    color: white;
+    margin: 0 auto;
+    font-size: 20px;
+    overflow: auto;
+  }
+
+  #star-register-background2{
+    z-index: 0;
+    height: 40%;
+    width: 30%;
+    background: linear-gradient(90deg, #0277bd 0%, #d50000 100%);
+    border-radius: 6px;
+    position: relative;
+    left:30%;
+  }
+  #star-register-background2 > div{
+    z-index: 1;
+    background:#1b2735;  
+    height: 96%;
+    width: 97%;
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    padding: 5px 25px;
+    color: white;
+    margin: 0 auto;
+    font-size: 20px;
+    overflow: auto;
+  }
+
+  #regbutton{
+    margin-top: 12%
   }
 
   #stars {
