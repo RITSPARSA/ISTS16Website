@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>ISTS 16</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/logo.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <nav id="navbar" class=" nav-center" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="hide-on-med-and-down">
+                    <li><a href="sass.html">HOME</a></li>
+                    <li><a href="badges.html">ABOUT</a></li>
+                    <li><a href="collapsible.html">REGISTER</a></li>
+                    <li><a class="waves-effect waves-light btn-large" href="mobile.html">SPONSOR</a></li>
+                </ul>
+                <ul class="grey darken-4 side-nav" id="mobile-demo">
+                    <li><a class="waves-effect waves-light btn-large" style="color:White"; href="sass.html">HOME</a></li>
+                    <li><a class="waves-effect waves-light btn-large" style="color:White"; href="badges.html">ABOUT</a></li>
+                    <li><a class="waves-effect waves-light btn-large" style="color:White"; href="collapsible.html">REGISTER</a></li>
+                    <li><a class="waves-effect waves-light btn-large" style="color:White"; href="mobile.html">SPONSOR</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div id="star-box">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+            <div id="star-box-about">
+                <center>
+                    <h3>A Competition For Students</h3>
+                    </br>
+                    </br>
+                    <h3>Securing The Future</h3>
+                </center>
+            </div>
+        </div>
+
+        <!-- <div id="Transition"></div> -->
+
+        <div id="about">
+            <div class=stars-sm></div>
+            <div class=stars-lg></div>
+            <h1>Meow</h1>
+        </div>
+
+    </body>
+    <!-- jQuery is required by Materialize to function -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(".button-collapse").sideNav();
+        
+        function() {
+		if( $('.shooting-star, .stars').length ) {
+			this.stars();
+        } else {
+            return;
+        }
+
+	stars: function() {
+
+        $('.gradient').append("<span class='bg-orange bg-gradient'></span><span class='bg-purple bg-gradient'></span><span class='bg-blue bg-gradient'></span>");
+
+        var gradient = $('.gradient'),
+			colors = $('.bg-gradient'),
+			active =  Math.round(Math.random() * 2),
+			pause = 6000,
+			count = colors.length,
+			i = 0;
+
+		colors.eq(active).addClass('is-active initial');
+		setTimeout(transition,pause);
+		function transition(){
+			colors.eq(i).removeClass('is-active initial');
+			if( ++i >= count ){
+				i = 0;
+			}
+			colors.eq(i).addClass('is-active');
+			setTimeout(transition, pause);
+		}
+
+		function shootingStar(that, dir) {
+            setInterval(function(){
+                var topPos = Math.floor(Math.random() * 80) + 1,
+					topPos = topPos + '%',
+					leftPos = Math.floor(Math.random() * 40) + 1,
+					leftPos = leftPos + '%',
+					trans = Math.floor(Math.random() * 300) + 1,
+					trans = trans + 'deg';
+                that.css({
+				    'top': topPos,
+				    dir: leftPos,
+					transform: 'rotate(' + trans + ')'
+				});
+            }, 2000);
+		}
+
+        $('.shooting-star').each(function(){
+			var el = $(this);
+			shootingStar(el, 'left');
+        });
+
+		$('.shooting-star-right').each(function(){
+			var el = $(this);
+			shootingStar(el, 'right');
+        });
+	}
+};
+    </script>
+</html>
