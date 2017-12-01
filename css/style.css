@@ -107,6 +107,19 @@ html {
     margin-top: 12%
   }
 
+  #soon-text {
+    position: fixed;
+    width: 50%;
+    height: 30%;
+    margin-left: 25%;
+    margin-top: 10%;
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 50;
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #FFA000, 0 0 14px #FFA000, 0 0 16px #FFA000, 0 0 20px #FFA000, 0 0 30px #FFA000;
+}
+
   #stars {
     width: 1px;
     height: 1px;
@@ -216,10 +229,18 @@ nav.nav-center ul li a {
     left: 0px;
     position: relative;
     overflow: hidden;
-    background: -webkit-linear-gradient(135deg, #5073B8 0%, #13a793 36%, #07B39B 81%, #6DBA82 100%);
+    background: -webkit-linear-gradient(135deg, #0949C0 0%, #13a793 36%, #07B39B 81%, #6DBA82 100%);
     z-index: 0;
 }
 
+#sponsor-modal {
+  background: #B3E5FC;
+  border: 5px solid #212121;
+}
+
+#sponsor-modal-footer {
+  background: -webkit-linear-gradient(135deg, #f44336 0%, #ef9a9a 36%, #64B5F6 81%, #1E88E5 100%);
+}
 
 
 @keyframes animStar {
