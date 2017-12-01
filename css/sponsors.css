@@ -1,0 +1,12 @@
+#soon-text {
+    position: fixed;
+    width: 50%;
+    height: 30%;
+    margin-left: 25%;
+    margin-top: 10%;
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 50;
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #FFA000, 0 0 14px #FFA000, 0 0 16px #FFA000, 0 0 20px #FFA000, 0 0 30px #FFA000;
+}
