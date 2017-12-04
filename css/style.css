@@ -120,6 +120,52 @@ html {
     text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #FFA000, 0 0 14px #FFA000, 0 0 16px #FFA000, 0 0 20px #FFA000, 0 0 30px #FFA000;
 }
 
+nav.nav-center ul {
+  text-align: center;
+}
+nav.nav-center ul li {
+  display: inline;
+  float: none;
+}
+nav.nav-center ul li a {
+  display: inline-block;
+}
+
+#navbar {
+  position: absolute;
+  background-color: #1d2430
+}
+
+#Transition{
+  height: 10%;
+  width: 100%;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  background-repeat: repeat-x;
+  background-color: transparent;
+  background-size: 9%;
+  
+}
+
+#about{
+  top: 0px;
+  left: 0px;
+  position: relative;
+  overflow: hidden;
+  background: -webkit-linear-gradient(135deg, #0949C0 0%, #13a793 36%, #07B39B 81%, #6DBA82 100%);
+  z-index: 0;
+}
+
+#sponsor-modal {
+background: #B3E5FC;
+border: 5px solid #212121;
+}
+
+#sponsor-modal-footer {
+background: -webkit-linear-gradient(135deg, #f44336 0%, #ef9a9a 36%, #64B5F6 81%, #1E88E5 100%);
+}
+
+
+
   #stars {
     width: 1px;
     height: 1px;
@@ -196,50 +242,6 @@ html {
   top: 0;
   transform-origin: center;
   background: url(../img/stars-lg.svg) center/1100px auto repeat;
-}
-
-nav.nav-center ul {
-    text-align: center;
-}
-nav.nav-center ul li {
-    display: inline;
-    float: none;
-}
-nav.nav-center ul li a {
-    display: inline-block;
-}
-
-#navbar {
-    position: absolute;
-    background-color: #1d2430
-}
-
-#Transition{
-    height: 10%;
-    width: 100%;
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
-    background-repeat: repeat-x;
-    background-color: transparent;
-    background-size: 9%;
-    
-}
-
-#about{
-    top: 0px;
-    left: 0px;
-    position: relative;
-    overflow: hidden;
-    background: -webkit-linear-gradient(135deg, #0949C0 0%, #13a793 36%, #07B39B 81%, #6DBA82 100%);
-    z-index: 0;
-}
-
-#sponsor-modal {
-  background: #B3E5FC;
-  border: 5px solid #212121;
-}
-
-#sponsor-modal-footer {
-  background: -webkit-linear-gradient(135deg, #f44336 0%, #ef9a9a 36%, #64B5F6 81%, #1E88E5 100%);
 }
 
 
