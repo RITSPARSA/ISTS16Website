@@ -14,22 +14,19 @@ function thanksSponsors() {
 
 function rotate_text() {
     console.log("Rotating")
-    var sponsor_starttext = document.getElementById("sponsor-start-text");
-    var sponsor_revealtext = document.getElementById("sponsor-reveal-span");
+    var sponsor_text = document.getElementById("sponsor-text");
 
     if (stage == 0) {
-        sponsor_starttext.innerText = "Gold Sponsors: ";
-        sponsor_revealtext.innerText = gold_sponsors;
+        sponsor_text.innerText = "Gold Sponsors: "+gold_sponsors;
         stage = 1;
     }
     else if (stage == 1) {
-        sponsor_starttext.innerText = "Silver Sponsors: ";
-        sponsor_revealtext.innerText = silver_sponsors;
-        stage = 2;
+        sponsor_text.innerText = "Silver Sponsors: "+silver_sponsors;
+        //stage = 2;
+        stage = 0;
     }
     else {
-        sponsor_starttext.innerText = "Bronze Sponsors: ";
-        sponsor_revealtext.innerText = bronze_sponsors;
+        sponsor_text.innerText = "Bronze Sponsors: "+bronze_sponsors;
         stage = 0;
     }
 }
