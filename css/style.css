@@ -13,38 +13,52 @@ html {
   }
   @media(min-width:60em){html{font-size: 110%}}
 
+  .container-wide{
+    width: 92%;
+    margin: 0 auto;
+    transition: max-width .4s ease-out;
+    max-width: 1440px;
+  }
+
   #star-box-about {
-    top: 25%;
-    left: 0%;
+    top: 20%;
     height: auto;
     position: relative;
     font-size: 50%;
-    color: White 
+    color: White; 
   }
 
-  #star-about-background{
-    z-index: 0;
-    height: 47%;
-    width: 50%;
+  #star-about-container{
+    top: 35%;
+    left: 15%;
+    padding: 20px 0 60px;
+    position: relative;
+    color: White; 
+  }
+
+  #star-about-container > *{
+    width: 60%;
     background: linear-gradient(90deg, #0277bd 0%, #d50000 100%);
+    padding: 45px 25px;
     border-radius: 6px;
     position: relative;
-    top: 35%;
-    margin: 0 auto;
   }
-  #star-about-background > div{
+
+  #star-about-container > * > * {
+    position: relative;
     z-index: 1;
-    background:#1b2735;  
-    height: 96%;
-    width: 98%;
+  }
+
+  #star-about-container > *:after{
+    content: '';
+    display: block;
     position: absolute;
-    top: 8px;
-    left: 10px;
-    padding: 5px 25px;
-    color: white;
-    margin: 0 auto;
-    font-size: 200%;
-    overflow: auto;
+    border-radius: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    top: 4px;
+    left: 4px;
+    background: #1b2735
   }
 
   #star-register-row{
