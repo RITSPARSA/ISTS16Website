@@ -2,6 +2,7 @@ html {
     background-color: black;
     font-family: Roboto
 }
+@media(min-width:60em){html{font-size: 110%}}
 
 #star-box {
     height: 100%;
@@ -11,10 +12,9 @@ html {
     font-size: 60%;
     z-index: -1;
   }
-  @media(min-width:60em){html{font-size: 110%}}
 
   .container-wide{
-    width: 100%;
+    width: 92%;
     margin: 0 auto;
     transition: max-width .4s ease-out;
     max-width: 1440px;
@@ -61,60 +61,44 @@ html {
     background: #1b2735
   }
   
-  #star-register-row{
-    z-index: 0;
-    height: 100%;
-    width: 100%;
+  #star-register-container{
+    display: flex;
+    top: 30%;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 60px 0 80px;
+    color: White; 
     position: relative;
-    top: 40%;
-  }
-  #star-register-background1{
-    z-index: 0;
-    height: 40%;
-    width: 30%;
-    background: linear-gradient(90deg, #d50000 0%, #0277bd 100%);
-    border-radius: 6px;
-    position: relative;
-    left: 10%;
-    
-  }
-  #star-register-background1 > div{
-    z-index: 1;
-    background:#1b2735;  
-    height: 96%;
-    width: 97%;
-    position: absolute;
-    top: 8px;
-    left: 9px;
-    padding: 5px 25px;
-    color: white;
+
+    width: 60%;
     margin: 0 auto;
-    font-size: 20px;
-    overflow: auto;
+    transition: max-width .4s ease-out;
+    max-width: 1440px;
   }
-  
-  #star-register-background2{
-    z-index: 0;
-    height: 40%;
-    width: 30%;
+
+  #star-register-container > * {
+    width: 40%;
     background: linear-gradient(90deg, #0277bd 0%, #d50000 100%);
+    padding: 25px 25px;
     border-radius: 6px;
     position: relative;
-    left:30%;
   }
-  #star-register-background2 > div{
+
+  #star-register-container > * > * {
+    position: relative;
     z-index: 1;
-    background:#1b2735;  
-    height: 96%;
-    width: 97%;
+  }
+
+  #star-register-container > *:after{
+    content: '';
+    display: block;
     position: absolute;
-    top: 8px;
-    left: 9px;
-    padding: 5px 25px;
-    color: white;
-    margin: 0 auto;
-    font-size: 20px;
-    overflow: auto;
+    border-radius: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    top: 4px;
+    left: 4px;
+    background: #1b2735
   }
   
   #regbutton{
@@ -133,49 +117,52 @@ html {
     font-weight: 50;
     text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #FFA000, 0 0 14px #FFA000, 0 0 16px #FFA000, 0 0 20px #FFA000, 0 0 30px #FFA000;
   }
-                          nav.nav-center ul {
-                            text-align: center;
-                          }
-                          nav.nav-center ul li {
-                            display: inline;
-                            float: none;
-                          }
-                          nav.nav-center ul li a {
-                            display: inline-block;
-                          }
-                          
-                          #navbar {
-                            position: absolute;
-                            background-color: #1d2430
-                          }
-                          
-                          #Transition{
-                            height: 10%;
-                            width: 100%;
-                            box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
-                            background-repeat: repeat-x;
-                            background-color: transparent;
-                            background-size: 9%;
-                            
-                          }
-                          
-                          #about{
-                            top: 0px;
-                            left: 0px;
-                            position: relative;
-                            overflow: hidden;
-                            background: -webkit-linear-gradient(135deg, #0949C0 0%, #13a793 36%, #07B39B 81%, #6DBA82 100%);
-                            z-index: 0;
-                          }
-                          
-                          #sponsor-modal {
-                            background: #B3E5FC;
-                            border: 5px solid #212121;
-                          }
-                          
-                          #sponsor-modal-footer {
-                            background: -webkit-linear-gradient(135deg, #f44336 0%, #ef9a9a 36%, #64B5F6 81%, #1E88E5 100%);
-                          }
+
+  nav.nav-center ul {
+    text-align: center;
+  }
+
+  nav.nav-center ul li {
+    display: inline;
+    float: none;
+  }
+
+  nav.nav-center ul li a {
+    display: inline-block;
+  }
+  
+  #navbar {
+    position: absolute;
+    background-color: #1d2430
+  }
+  
+  #Transition{
+    height: 10%;
+    width: 100%;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    background-repeat: repeat-x;
+    background-color: transparent;
+    background-size: 9%;
+    
+  }
+  
+  #about{
+    top: 0px;
+    left: 0px;
+    position: relative;
+    overflow: hidden;
+    background: -webkit-linear-gradient(135deg, #0949C0 0%, #13a793 36%, #07B39B 81%, #6DBA82 100%);
+    z-index: 0;
+  }
+  
+  #sponsor-modal {
+    background: #B3E5FC;
+    border: 5px solid #212121;
+  }
+  
+  #sponsor-modal-footer {
+    background: -webkit-linear-gradient(135deg, #f44336 0%, #ef9a9a 36%, #64B5F6 81%, #1E88E5 100%);
+  }
   
   #stars {
     width: 1px;
@@ -281,5 +268,16 @@ html {
     }
     #star-box-about {
       top: 10%;
+    }
+  }
+  @media screen and (max-width: 650px){
+    #star-register-container{
+      display: block;
+      width: 100%;
+      top: 10%;
+    }
+    #star-register-container > *{
+      width: 100%;
+      margin-bottom: 20px;
     }
   }
