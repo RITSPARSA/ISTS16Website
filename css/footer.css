@@ -1,0 +1,12 @@
+#footer1{
+    z-index: -3;
+    color: white;
+    background: linear-gradient(135deg, #5073B8 0%, #13a793 36%, #07B39B 81%, #6DBA82 100%);
+}
+#holder{
+    overflow:hidden;
+    position: relative;
+    transition: max-width .4s ease-out;
+    width: 100%;
+    margin: 0 auto;
+}

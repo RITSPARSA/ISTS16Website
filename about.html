@@ -51,8 +51,8 @@
                         The Information Security Talent Search (ISTS) competition is an annual three day cyber attack/defend 
                         competition hosted at the Rochester Institute of Technology by SPARSA. Each year, colleges from around 
                        the North East compete for the coveted title of ISTS champion. Competitors are faced with a wide variety 
-                       of challenges which are designed to cover as many facets of computing security, system administration, networking 
-                       and programming as we possibly can. These challenges include code review, architecture design, incident response,
+                       of challenges which are designed to cover as many facets of computing security, system administration, networking, 
+                       and programming as possible. These challenges include code review, architecture design, incident response,
                        and policy writing all while defending a completely student built infrastructure.
                     </p>
                 </div>
@@ -66,62 +66,7 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
         $(".button-collapse").sideNav();
-        
-        function starman() {
-		if( $('.shooting-star, .stars').length ) {
-			this.stars();
-        } else {
-            return;
-        }
+                
 
-        function stars() {
-
-        $('.gradient').append("<span class='bg-orange bg-gradient'></span><span class='bg-purple bg-gradient'></span><span class='bg-blue bg-gradient'></span>");
-
-        var gradient = $('.gradient'),
-			colors = $('.bg-gradient'),
-			active =  Math.round(Math.random() * 2),
-			pause = 6000,
-			count = colors.length,
-			i = 0;
-
-		colors.eq(active).addClass('is-active initial');
-		setTimeout(transition,pause);
-		function transition(){
-			colors.eq(i).removeClass('is-active initial');
-			if( ++i >= count ){
-				i = 0;
-			}
-			colors.eq(i).addClass('is-active');
-			setTimeout(transition, pause);
-		}
-
-		function shootingStar(that, dir) {
-            setInterval(function(){
-                var topPos = Math.floor(Math.random() * 80) + 1,
-					topPos = topPos + '%',
-					leftPos = Math.floor(Math.random() * 40) + 1,
-					leftPos = leftPos + '%',
-					trans = Math.floor(Math.random() * 300) + 1,
-					trans = trans + 'deg';
-                that.css({
-				    'top': topPos,
-				    dir: leftPos,
-					transform: 'rotate(' + trans + ')'
-				});
-            }, 2000);
-		}
-
-        $('.shooting-star').each(function(){
-			var el = $(this);
-			shootingStar(el, 'left');
-        });
-
-		$('.shooting-star-right').each(function(){
-			var el = $(this);
-			shootingStar(el, 'right');
-        });
-	}
-};
     </script>
 </html>
