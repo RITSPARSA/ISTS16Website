@@ -1,5 +1,3 @@
-
-  
   #logo-container {
     position: relative;
     width: 600px;
@@ -51,7 +49,6 @@
     margin-left: -5px;
   }
   
-
   @font-face {
     font-family: "Stratum";
     src: local(Stratum Bold), url("../fonts/stratum/Stratum-Bold.ttf") format("ttf"), url("../fonts/stratum/Stratum-Bold.ttf") format("ttf");
@@ -60,5 +57,5 @@
 
   @media screen and (max-width: 650px){
     #logo-container{
-      top: 25%;
+      top: 35%;
     }

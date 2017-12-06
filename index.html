@@ -28,11 +28,11 @@
                 <li><a id="supportbutton" class="waves-effect waves-light btn-large" href="#">SUPPORT US</a></li>
               </ul>
               <ul class="grey darken-4 side-nav" id="mobile-demo">
-                <li><a id="homebutton" class="waves-effect waves-light btn-large" style="color:White;" href="#">HOME</a></li>
-                <li><a id="aboutbutton" class="waves-effect waves-light btn-large" style="color:White;" href="#">ABOUT</a></li>
-                <li><a id="registerbutton" class="waves-effect waves-light btn-large" style="color:White;" href="#">REGISTER</a></li>
-                <li><a id="sponsorsbutton" class="waves-effect waves-light btn-large" style="color:White;" href="#">SPONSORS</a></li>
-                <li><a id="supportbutton" class="waves-effect waves-light btn-large" style="color:White" href="#" >SUPPORT US</a></li>
+                <li><a id="homebutton2" class="waves-effect waves-light btn-large" style="color:White;" href="#">HOME</a></li>
+                <li><a id="aboutbutton2" class="waves-effect waves-light btn-large" style="color:White;" href="#">ABOUT</a></li>
+                <li><a id="registerbutton2" class="waves-effect waves-light btn-large" style="color:White;" href="#">REGISTER</a></li>
+                <li><a id="sponsorsbutton2" class="waves-effect waves-light btn-large" style="color:White;" href="#">SPONSORS</a></li>
+                <li><a id="supportbutton2" class="waves-effect waves-light btn-large" style="color:White" href="#" >SUPPORT US</a></li>
               </ul>
             </div>
         </nav>
@@ -118,26 +118,43 @@
               btn3 = document.getElementById('registerbutton'),
               btn4 = document.getElementById('sponsorsbutton'),
               btn5 = document.getElementById('supportbutton');
+
+          var btn6 = document.getElementById('homebutton2'),
+              btn7 = document.getElementById('aboutbutton2'),
+              btn8 = document.getElementById('registerbutton2'),
+              btn9 = document.getElementById('sponsorsbutton2'),
+              btn10 = document.getElementById('supportbutton2');    
           function loadhome(){
               $("#content-placeholder").load("logo.html")
+              $('.button-collapse').sideNav('hide');
           }
           function loadabout(){
               $("#content-placeholder").load("about.html")
+              $('.button-collapse').sideNav('hide');
           }
           function loadregister(){
               $("#content-placeholder").load("register.html")
+              $('.button-collapse').sideNav('hide');
           }
           function loadsponsors(){
               $("#content-placeholder").load("sponsors.html")
+              $('.button-collapse').sideNav('hide');
           }
           function loadsupport(){
               $("#content-placeholder").load("support_us.html")
+              $('.button-collapse').sideNav('hide');
           }
+          
           btn1.onclick = loadhome;
           btn2.onclick = loadabout;
           btn3.onclick = loadregister;
           btn4.onclick = loadsponsors;
           btn5.onclick = loadsupport;
+          btn6.onclick = loadhome;
+          btn7.onclick = loadabout;
+          btn8.onclick = loadregister;
+          btn9.onclick = loadsponsors;
+          btn10.onclick = loadsupport;
       </script>
 
       <script>
