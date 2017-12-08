@@ -138,11 +138,11 @@ html {
   }
   
   #soon-text {
-    position: fixed;
+    position: relative;
     width: 50%;
     height: 30%;
     margin-left: 25%;
-    margin-top: 10%;
+    top: 20%;
     color: white;
     text-align: center;
     font-family: Roboto;
