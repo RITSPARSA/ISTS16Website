@@ -271,10 +271,12 @@ html {
     transform-origin: center;
     opacity: 0.9;
     background: url(../img/stars-lg.svg) center/1100px auto repeat;
-  }
+  }  
   
-  
-  
+  #sidenav-overlay {
+    z-index: 0;
+    }
+
   @keyframes animStar {
     from {
       transform: translateY(0px);
