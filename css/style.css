@@ -135,14 +135,14 @@ html {
   
   #star-sponsor-container{
     top: 10%;
-    left: 8%;
+    left: 23%;
     padding: 20px 0 60px;
     position: relative;
     color: White; 
   }
 
   #star-sponsor-container > *{
-    width: 70%;
+    width: 50%;
     background: linear-gradient(90deg, #0277bd 0%, #d50000 100%);
     padding: 25px 25px;
     border-radius: 6px;
