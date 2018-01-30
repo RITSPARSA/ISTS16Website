@@ -133,6 +133,39 @@ html {
     background: #1b2735
   }
   
+  #star-sponsor-container{
+    top: 10%;
+    left: 8%;
+    padding: 20px 0 60px;
+    position: relative;
+    color: White; 
+  }
+
+  #star-sponsor-container > *{
+    width: 80%;
+    background: linear-gradient(90deg, #0277bd 0%, #d50000 100%);
+    padding: 25px 25px;
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  #star-sponsor-container > * > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #star-sponsor-container > *:after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    top: 4px;
+    left: 4px;
+    background: #1b2735
+  }
+
   #regbutton{
     margin-top: 12%
   }
