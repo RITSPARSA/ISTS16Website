@@ -142,7 +142,7 @@ html {
   }
 
   #star-sponsor-container > *{
-    width: 80%;
+    width: 70%;
     background: linear-gradient(90deg, #0277bd 0%, #d50000 100%);
     padding: 25px 25px;
     border-radius: 6px;
@@ -337,6 +337,8 @@ html {
     }
 
   }
+
+
   @media screen and (max-width: 650px){
     #star-register-container{
       display: block;
@@ -346,5 +348,12 @@ html {
     #star-register-container > *{
       width: 100%;
       margin-bottom: 20px;
+    }
+    #star-sponsor-container > *{
+      width: 100%;
+    }
+    #star-sponsor-container{
+      width: 100%;
+      left: 0%;   
     }
   }
