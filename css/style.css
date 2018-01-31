@@ -135,7 +135,7 @@ html {
   
   #star-sponsor-container{
     top: 10%;
-    left: 23%;
+    left: 19%;
     padding: 20px 0 60px;
     position: relative;
     color: White; 
@@ -319,6 +319,17 @@ html {
     }
   }
   
+  @media screen and (max-width: 1800px){
+    #star-sponsor-container{
+      left: 23%;
+    }
+  }
+
+  @media screen and (max-height: 690px){
+    #star-about-container{
+      top: 20%;   
+    }
+
   @media screen and (max-width: 480px){
     #star-about-container > *{
       width: 100%;
@@ -338,7 +349,6 @@ html {
 
   }
 
-
   @media screen and (max-width: 650px){
     #star-register-container{
       display: block;
@@ -357,3 +367,4 @@ html {
       left: 0%;   
     }
   }
+}
